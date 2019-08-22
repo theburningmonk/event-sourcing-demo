@@ -1,0 +1,57 @@
+service: event-sourcing-demo
+
+plugins:
+  - serverless-cloudside-plugin
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  environment:
+    TABLE_NAME:
+      Ref: AccountTable
+  iamRoleStatements:
+    - Effect: Allow
+      Action: 
+        - dynamodb:PutItem
+        - dynamodb:Query
+      Resource:
+        Fn::GetAtt: [AccountTable, Arn]
+
+functions:
+  create-account:
+    handler: functions/create-account.handler
+    events:
+      - http:
+          path: /account
+          method: post
+
+  withdraw:
+    handler: functions/withdraw.handler
+    events:
+      - http:
+          path: /account/{accountId}/withdraw
+          method: post
+
+  credit:
+    handler: functions/credit.handler
+    events:
+      - http:
+          path: /account/{accountId}/credit
+          method: post
+
+resources:
+  Resources:
+    AccountTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions: 
+          - AttributeName: Id
+            AttributeType: S
+          - AttributeName: Version
+            AttributeType: N
+        BillingMode: PAY_PER_REQUEST
+        KeySchema:
+          - AttributeName: Id
+            KeyType: HASH
+          - AttributeName: Version
+            KeyType: RANGE

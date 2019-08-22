@@ -1,0 +1,123 @@
+{
+  "resource": "/account/{accountId}/credit",
+  "path": "/account/cb2f9e65-e576-436c-b948-6361a3a3764a/credit",
+  "httpMethod": "POST",
+  "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "NL",
+      "Content-Type": "application/json",
+      "Host": "f7t6sy8sj1.execute-api.us-east-1.amazonaws.com",
+      "Postman-Token": "e9764460-006f-4fc0-9783-e41365055902",
+      "User-Agent": "PostmanRuntime/7.15.2",
+      "Via": "1.1 57f9250ef620b33bc5b87625f8d36f5f.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "OoM7bG65ir7TkCJ4SyJkehuiAMOzKHfU2-fz11lF7r3ibhY-16AQRw==",
+      "X-Amzn-Trace-Id": "Root=1-5d5f0ac2-7ffe806c3127b3a2931ef828",
+      "X-Forwarded-For": "77.173.243.53, 130.176.9.95",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+      "Accept": [
+          "*/*"
+      ],
+      "Accept-Encoding": [
+          "gzip, deflate"
+      ],
+      "Cache-Control": [
+          "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+          "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+          "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+          "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+          "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+          "false"
+      ],
+      "CloudFront-Viewer-Country": [
+          "NL"
+      ],
+      "Content-Type": [
+          "application/json"
+      ],
+      "Host": [
+          "f7t6sy8sj1.execute-api.us-east-1.amazonaws.com"
+      ],
+      "Postman-Token": [
+          "e9764460-006f-4fc0-9783-e41365055902"
+      ],
+      "User-Agent": [
+          "PostmanRuntime/7.15.2"
+      ],
+      "Via": [
+          "1.1 57f9250ef620b33bc5b87625f8d36f5f.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+          "OoM7bG65ir7TkCJ4SyJkehuiAMOzKHfU2-fz11lF7r3ibhY-16AQRw=="
+      ],
+      "X-Amzn-Trace-Id": [
+          "Root=1-5d5f0ac2-7ffe806c3127b3a2931ef828"
+      ],
+      "X-Forwarded-For": [
+          "77.173.243.53, 130.176.9.95"
+      ],
+      "X-Forwarded-Port": [
+          "443"
+      ],
+      "X-Forwarded-Proto": [
+          "https"
+      ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": {
+      "accountId": "cb2f9e65-e576-436c-b948-6361a3a3764a"
+  },
+  "stageVariables": null,
+  "requestContext": {
+      "resourceId": "63gnam",
+      "resourcePath": "/account/{accountId}/credit",
+      "httpMethod": "POST",
+      "extendedRequestId": "e16eYHK_IAMFi0A=",
+      "requestTime": "22/Aug/2019:21:36:02 +0000",
+      "path": "/dev/account/cb2f9e65-e576-436c-b948-6361a3a3764a/credit",
+      "accountId": "374852340823",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "f7t6sy8sj1",
+      "requestTimeEpoch": 1566509762499,
+      "requestId": "15f66dd0-93d2-41c7-9cda-594b64868bb0",
+      "identity": {
+          "cognitoIdentityPoolId": null,
+          "accountId": null,
+          "cognitoIdentityId": null,
+          "caller": null,
+          "sourceIp": "77.173.243.53",
+          "principalOrgId": null,
+          "accessKey": null,
+          "cognitoAuthenticationType": null,
+          "cognitoAuthenticationProvider": null,
+          "userArn": null,
+          "userAgent": "PostmanRuntime/7.15.2",
+          "user": null
+      },
+      "domainName": "f7t6sy8sj1.execute-api.us-east-1.amazonaws.com",
+      "apiId": "f7t6sy8sj1"
+  },
+  "body": "{ \"amount\": 10.0 }",
+  "isBase64Encoded": false
+}

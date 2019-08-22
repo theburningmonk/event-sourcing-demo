@@ -1,0 +1,123 @@
+{
+  "resource": "/account/{accountId}/withdraw",
+  "path": "/account/cb2f9e65-e576-436c-b948-6361a3a3764a/withdraw",
+  "httpMethod": "POST",
+  "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "NL",
+      "Content-Type": "application/json",
+      "Host": "f7t6sy8sj1.execute-api.us-east-1.amazonaws.com",
+      "Postman-Token": "e16de83e-15b2-4c36-b513-9afb161b5a5b",
+      "User-Agent": "PostmanRuntime/7.15.2",
+      "Via": "1.1 57f9250ef620b33bc5b87625f8d36f5f.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "f3DCslv3Ucf41R-qGPJ7bxcE3jtvgVBZkvuBC_kOJTywLuihiL2P5A==",
+      "X-Amzn-Trace-Id": "Root=1-5d5f0abc-fe0689bc977b14c00bad6ce8",
+      "X-Forwarded-For": "77.173.243.53, 130.176.9.133",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+      "Accept": [
+          "*/*"
+      ],
+      "Accept-Encoding": [
+          "gzip, deflate"
+      ],
+      "Cache-Control": [
+          "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+          "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+          "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+          "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+          "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+          "false"
+      ],
+      "CloudFront-Viewer-Country": [
+          "NL"
+      ],
+      "Content-Type": [
+          "application/json"
+      ],
+      "Host": [
+          "f7t6sy8sj1.execute-api.us-east-1.amazonaws.com"
+      ],
+      "Postman-Token": [
+          "e16de83e-15b2-4c36-b513-9afb161b5a5b"
+      ],
+      "User-Agent": [
+          "PostmanRuntime/7.15.2"
+      ],
+      "Via": [
+          "1.1 57f9250ef620b33bc5b87625f8d36f5f.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+          "f3DCslv3Ucf41R-qGPJ7bxcE3jtvgVBZkvuBC_kOJTywLuihiL2P5A=="
+      ],
+      "X-Amzn-Trace-Id": [
+          "Root=1-5d5f0abc-fe0689bc977b14c00bad6ce8"
+      ],
+      "X-Forwarded-For": [
+          "77.173.243.53, 130.176.9.133"
+      ],
+      "X-Forwarded-Port": [
+          "443"
+      ],
+      "X-Forwarded-Proto": [
+          "https"
+      ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": {
+      "accountId": "cb2f9e65-e576-436c-b948-6361a3a3764a"
+  },
+  "stageVariables": null,
+  "requestContext": {
+      "resourceId": "krrdzm",
+      "resourcePath": "/account/{accountId}/withdraw",
+      "httpMethod": "POST",
+      "extendedRequestId": "e16daHk-oAMFQRA=",
+      "requestTime": "22/Aug/2019:21:35:56 +0000",
+      "path": "/dev/account/cb2f9e65-e576-436c-b948-6361a3a3764a/withdraw",
+      "accountId": "374852340823",
+      "protocol": "HTTP/1.1",
+      "stage": "dev",
+      "domainPrefix": "f7t6sy8sj1",
+      "requestTimeEpoch": 1566509756211,
+      "requestId": "5e8ae012-f3ff-4801-a394-1cea36cfc084",
+      "identity": {
+          "cognitoIdentityPoolId": null,
+          "accountId": null,
+          "cognitoIdentityId": null,
+          "caller": null,
+          "sourceIp": "77.173.243.53",
+          "principalOrgId": null,
+          "accessKey": null,
+          "cognitoAuthenticationType": null,
+          "cognitoAuthenticationProvider": null,
+          "userArn": null,
+          "userAgent": "PostmanRuntime/7.15.2",
+          "user": null
+      },
+      "domainName": "f7t6sy8sj1.execute-api.us-east-1.amazonaws.com",
+      "apiId": "f7t6sy8sj1"
+  },
+  "body": "{ \"amount\": 10.0 }",
+  "isBase64Encoded": false
+}
