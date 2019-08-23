@@ -1,4 +1,4 @@
-const { getAccount, addEvent } = require('../lib/account')
+const { EventType, getAccount, addEvent } = require('../lib/account')
 
 module.exports.handler = async (event) => {
   const { accountId } = event.pathParameters
@@ -8,7 +8,7 @@ module.exports.handler = async (event) => {
 
   const balance = currentState.Balance + amount
   const newEvent = {
-    type: 'CREDIT',
+    type: EventType.CREDIT,
     amount: amount,
     balance
   }

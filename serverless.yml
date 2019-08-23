@@ -2,6 +2,7 @@ service: event-sourcing-demo
 
 plugins:
   - serverless-cloudside-plugin
+  - serverless-webpack
 
 provider:
   name: aws
@@ -16,6 +17,12 @@ provider:
         - dynamodb:Query
       Resource:
         Fn::GetAtt: [AccountTable, Arn]
+
+custom:
+  webpack:
+    webpackConfig: 'webpack.config.js'   # Name of webpack configuration file
+    includeModules: false   # Node modules configuration for packaging
+    packager: 'npm'   # Packager that will be used to package your external modules
 
 functions:
   create-account:
