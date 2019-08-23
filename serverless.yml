@@ -25,6 +25,13 @@ functions:
           path: /account
           method: post
 
+  check-balance:
+    handler: functions/check-balance.handler
+    events:
+      - http:
+          path: /account/{accountId}
+          method: get
+
   withdraw:
     handler: functions/withdraw.handler
     events:
