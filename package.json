@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/theburningmonk/event-sourcing-demo#readme",
   "dependencies": {
-    "aws-sdk": "^2.516.0",
+    "aws-sdk": "^2.814.0",
     "lodash": "^4.17.15",
     "uuid": "^3.3.3"
   },
