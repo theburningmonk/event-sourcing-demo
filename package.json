@@ -23,7 +23,7 @@
     "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "serverless": "^1.50.0",
+    "serverless": "^3.25.1",
     "serverless-cloudside-plugin": "^1.0.3",
     "serverless-webpack": "^5.3.1",
     "webpack": "^4.39.2",
