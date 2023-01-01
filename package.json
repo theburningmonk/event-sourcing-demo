@@ -26,7 +26,7 @@
     "serverless": "^1.50.0",
     "serverless-cloudside-plugin": "^1.0.3",
     "serverless-webpack": "^5.3.1",
-    "webpack": "^4.39.2",
+    "webpack": "^5.75.0",
     "webpack-node-externals": "^1.7.2"
   }
 }
